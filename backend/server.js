@@ -16,7 +16,7 @@ app.use(cors());
 // Multer Setup for File Uploads
 // const upload = multer({ dest: 'uploads/' });
 app.use(cors({
-    origin: "*", // Allow only frontend requests
+    origin: "https://aerostudy.vercel.app", // Allow only frontend requests
     methods: ["GET", "POST", "PUT", "DELETE"], // Allowed methods
     credentials: true, // If using cookies or authentication
   }));
