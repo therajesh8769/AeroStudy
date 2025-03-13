@@ -6,7 +6,7 @@ export interface Material {
 
 export const fetchMaterials = async (subjectCode: string): Promise<Material[]> => {
   try {
-    const response = await fetch(`http://localhost:4000/api/files/${subjectCode}`);
+    const response = await fetch(`https://aero-study.vercel.app/api/files/${subjectCode}`);
     if (!response.ok) throw new Error("Failed to fetch materials");
     const data = await response.json();
     console.log("Fetched data for", subjectCode, data);
