@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 4000;
 app.use(cors());  
 
 // Multer Setup for File Uploads
-const upload = multer({ dest: 'uploads/' });
+// const upload = multer({ dest: 'uploads/' });
 app.use(cors({
     origin: "*", // Allow only frontend requests
     methods: ["GET", "POST", "PUT", "DELETE"], // Allowed methods
@@ -28,40 +28,40 @@ app.use(cors({
 
 // const drive = google.drive({ version: 'v3', auth });
 
-const FOLDER_ID = "1-k_aUiGJh1aT4BU2LJOICWv3TjXf8a2w"; // Replace with your Google Drive folder ID
+// const FOLDER_ID = "1-k_aUiGJh1aT4BU2LJOICWv3TjXf8a2w"; // Replace with your Google Drive folder ID
 
 // Upload File to Google Drive
-app.post('/upload', upload.single('file'), async (req, res) => {
-  if (!req.file) return res.status(400).send('No file uploaded.');
+// app.post('/upload', upload.single('file'), async (req, res) => {
+//   if (!req.file) return res.status(400).send('No file uploaded.');
 
-  const filePath = path.join(__dirname, req.file.path);
+//   const filePath = path.join(__dirname, req.file.path);
 
-  try {
-    const fileMetadata = {
-      name: req.file.originalname,
-      parents: [FOLDER_ID], // Folder ID in Google Drive
-    };
+//   try {
+//     const fileMetadata = {
+//       name: req.file.originalname,
+//       parents: [FOLDER_ID], // Folder ID in Google Drive
+//     };
 
-    const media = {
-      mimeType: req.file.mimetype,
-      body: fs.createReadStream(filePath),
-    };
+//     const media = {
+//       mimeType: req.file.mimetype,
+//       body: fs.createReadStream(filePath),
+//     };
 
-    const response = await drive.files.create({
-      resource: fileMetadata,
-      media: media,
-      fields: 'id',
-    });
+//     const response = await drive.files.create({
+//       resource: fileMetadata,
+//       media: media,
+//       fields: 'id',
+//     });
 
-    // Delete local file after upload
-    fs.unlinkSync(filePath);
+//     // Delete local file after upload
+//     fs.unlinkSync(filePath);
 
-    res.json({ fileId: response.data.id, message: 'File uploaded successfully' });
-  } catch (error) {
-    console.error(error);
-    res.status(500).send('Error uploading file');
-  }
-});
+//     res.json({ fileId: response.data.id, message: 'File uploaded successfully' });
+//   } catch (error) {
+//     console.error(error);
+//     res.status(500).send('Error uploading file');
+//   }
+// });
 // Route to fetch files based on subject
 app.get('/api/files/:subject', async (req, res) => {
     try {
