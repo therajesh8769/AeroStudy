@@ -20,6 +20,11 @@ app.use(cors({
     methods: ["GET", "POST", "PUT", "DELETE"], // Allowed methods
     credentials: true, // If using cookies or authentication
   }));
+
+
+
+  app.use(express.static(path.join(__dirname, "build")));
+
 // Google Drive Authentication
 // const auth = new google.auth.GoogleAuth({
 //   keyFile: 'service-account.json', // Path to your service account key
@@ -73,6 +78,12 @@ app.get('/api/files/:subject', async (req, res) => {
       res.status(500).json({ message: 'Error fetching files', error });
     }
   });
+
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "build", "index.html"));
+  });
+  
 // Start Server
 // app.listen(PORT, () => {
 //   console.log(`Server running on http://localhost:${PORT}`);
