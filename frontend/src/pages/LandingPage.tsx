@@ -1,108 +1,4 @@
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-// import { Rocket, LogIn } from 'lucide-react';
-// import { motion } from 'framer-motion';
-// import ParticleBackground from '../components/ParticleBackground';
 
-// const LandingPage: React.FC = () => {
-//   return (
-//     <div className="min-h-screen flex flex-col relative overflow-hidden bg-gradient-to-b from-indigo-900 via-blue-900 to-black">
-//       <ParticleBackground />
-      
-//       {/* Space-themed overlay */}
-//       <div className="absolute inset-0 bg-cover bg-center opacity-20 z-0" 
-//            style={{ backgroundImage: "url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')" }}>
-//       </div>
-      
-//       <div className="container mx-auto px-4 py-16 flex-1 flex flex-col justify-center items-center relative z-10">
-//         <motion.div 
-//           initial={{ opacity: 0, y: -50 }}
-//           animate={{ opacity: 1, y: 0 }}
-//           transition={{ duration: 0.8 }}
-//           className="text-center mb-12"
-//         >
-//           <div className="flex justify-center mb-6">
-//             <Rocket className="h-20 w-20 text-white" />
-//           </div>
-//           <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
-//             Aerospace Engineering
-//           </h1>
-//           <h2 className="text-2xl md:text-3xl font-light text-blue-200 mb-8">
-//             Study Materials Portal
-//           </h2>
-//           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-//             Access comprehensive study materials for all four years of Aerospace Engineering curriculum.
-//             Everything you need for your academic journey, organized by year and semester.
-//           </p>
-//         </motion.div>
-        
-//         <motion.div 
-//           initial={{ opacity: 0, y: 50 }}
-//           animate={{ opacity: 1, y: 0 }}
-//           transition={{ duration: 0.8, delay: 0.3 }}
-//           className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6"
-//         >
-//           <Link to="/auth">
-//             {/* <motion.button 
-//               whileHover={{ scale: 1.05 }}
-//               whileTap={{ scale: 0.95 }}
-//               className="px-8 py-4 bg-indigo-600 text-white rounded-lg shadow-lg flex items-center justify-center text-lg font-medium hover:bg-indigo-700 transition-colors duration-300"
-//             >
-//                <LogIn className="mr-2 h-5 w-5" />
-//               Login / Signup 
-//             </motion.button> */}
-//           </Link>
-          
-//           <Link to="/years">
-//             <motion.button 
-//               whileHover={{ scale: 1.10 }}
-//               whileTap={{ scale: 0.95 }}
-//               className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg shadow-lg flex items-center justify-center text-lg font-medium hover:from-blue-600 hover:to-purple-700 transition-colors duration-300"
-//             >
-//               <Rocket className="mr-2 h-5 w-5" />
-//               Study Now
-//             </motion.button>
-//           </Link>
-//         </motion.div>
-//       </div>
-      
-//       {/* Animated rocket at the bottom */}
-//       <motion.div 
-//         initial={{ y: 100, opacity: 0 }}
-//         animate={{ y: [100, 0, 20, 0], opacity: 1 }}
-//         transition={{ 
-//           duration: 2,
-//           times: [0, 0.6, 0.8, 1],
-//           delay: 1,
-//           repeat: Infinity,
-//           repeatDelay: 10
-//         }}
-//         className="absolute bottom-10 right-10 z-10 hidden md:block"
-//       >
-//         <Rocket className="h-16 w-16 text-white transform -rotate-45" />
-//         <motion.div 
-//           animate={{ 
-//             height: [0, 40, 20, 30, 0],
-//             opacity: [0, 0.8, 0.6, 0.4, 0]
-//           }}
-//           transition={{ 
-//             duration: 2,
-//             repeat: Infinity,
-//             repeatDelay: 10
-//           }}
-//           className="absolute bottom-0 left-1/2 w-2 bg-gradient-to-t from-transparent via-orange-500 to-yellow-300 rounded-full"
-//           style={{ transformOrigin: 'bottom', transform: 'translateX(-50%) rotate(-45deg)' }}
-//         />
-//       </motion.div>
-      
-//       <footer className="w-full py-4 text-center text-gray-400 relative z-10">
-//         <p>© 2025 Department of Aerospace Engineering</p>
-//       </footer>
-//     </div>
-//   );
-// };
-
-// export default LandingPage;
 "use client"
 
 import type React from "react"
@@ -110,7 +6,7 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 import { Rocket, Github, Linkedin, Mail, Users, Code, ChevronLeft, ChevronRight, X } from "lucide-react"
 import { motion } from "framer-motion"
-import ParticleBackground from "../components/ParticleBackground"
+import AerospaceBackground from "../components/AerospaceBackground"
 
 interface TeamMember {
   name: string
@@ -332,15 +228,16 @@ const LandingPage: React.FC = () => {
   const [showContentTeam, setShowContentTeam] = useState(false)
 
   return (
-    <div className="min-h-screen flex flex-col relative overflow-hidden bg-gradient-to-b from-indigo-900 via-blue-900 to-black">
-      <ParticleBackground />
-
+    <div className="min-h-screen flex flex-col relative overflow-hidden bg-gradient-to-b from-indigo-900 via-blue-900 to-black z-[20]">
+      
+      <AerospaceBackground  />
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-20 z-0"
+        className="absolute inset-0 bg-cover bg-center opacity-10 z-[10]"
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')",
         }}
+        
       ></div>
 
       <div className="container mx-auto px-4 py-16 flex-1 flex flex-col justify-center items-center relative z-10">
@@ -431,7 +328,6 @@ const LandingPage: React.FC = () => {
           <span>Content Team</span>
         </motion.button>
 
-        
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
@@ -467,4 +363,5 @@ const LandingPage: React.FC = () => {
 }
 
 export default LandingPage
+
 

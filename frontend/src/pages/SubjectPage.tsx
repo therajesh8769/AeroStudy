@@ -587,7 +587,7 @@ const SubjectPage: React.FC = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
+      <div className="min-h-screen flex items-center justify-center  text-white">
         <p className="text-xl">Loading...</p>
       </div>
     )
@@ -595,7 +595,7 @@ const SubjectPage: React.FC = () => {
 
   if (!subjectDetails) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
+      <div className="min-h-screen flex items-center justify-center  text-white">
         <div className="text-center">
           <h2 className="text-2xl font-bold mb-4">Subject not found</h2>
           <Link to="/years" className="text-blue-400 hover:underline">
@@ -612,7 +612,7 @@ const SubjectPage: React.FC = () => {
   return (
     <>
       {/* Normal Subject Page – Hidden when a material is selected for read mode */}
-      <div className={`${selectedMaterial ? "hidden" : "block"} min-h-screen py-12 px-4 bg-gray-900 text-white`}>
+      <div className={`${selectedMaterial ? "hidden" : "block"} min-h-screen py-12 px-4  text-white`}>
         <div className="max-w-7xl mx-auto">
           <div className="mb-8">
             <Link
@@ -624,7 +624,7 @@ const SubjectPage: React.FC = () => {
             </Link>
           </div>
 
-          <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-8 mb-8">
+          <div className="border-2 border-sky-200 rounded-xl p-8 mb-8">
             <div className="flex flex-col md:flex-row justify-between">
               <div>
                 <h1 className="text-3xl font-bold text-white mb-2">{foundSubject.name}</h1>
@@ -634,7 +634,7 @@ const SubjectPage: React.FC = () => {
                     {foundYear.name} • {foundSemester.name}
                   </span>
                 </div>
-                <p className="text-gray-300 max-w-2xl">
+                <p className="text-gray-300  max-w-2xl">
                   Access all study materials for {foundSubject.name}. Click "Preview" below to read the document in full
                   screen.
                 </p>
@@ -671,7 +671,7 @@ const SubjectPage: React.FC = () => {
               foundSubject.materials.map((material: Material, index: number) => (
                 <div
                   key={index}
-                  className="border border-gray-700 bg-gray-800 p-4 rounded-md hover:border-gray-500 transition-colors"
+                  className="border-2 border-sky-500 p-4 rounded-md hover:border-gray-500 transition-colors"
                 >
                   <h3 className="text-xl font-semibold">{material.name}</h3>
                   <div className="mt-4 flex space-x-4">
@@ -701,7 +701,7 @@ const SubjectPage: React.FC = () => {
                 </div>
               ))
             ) : (
-              <div className="col-span-3 text-center py-12 bg-gray-800 rounded-lg">
+              <div className="col-span-3 text-center py-12  rounded-lg">
                 <p className="text-gray-400">No materials available for this subject yet.</p>
               </div>
             )}

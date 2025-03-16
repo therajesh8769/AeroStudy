@@ -19,7 +19,7 @@ const PlanetCard: React.FC<PlanetCardProps> = ({ year, index }) => {
         <motion.div 
           whileHover={{ scale: 1.05, rotate: 1 }}
           whileTap={{ scale: 0.98 }}
-          className="bg-gradient-to-br from-indigo-900 to-blue-900 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 h-full"
+          className="bg-gradient-to-br from-indigo-900 to-blue-900 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 h-full  "
         >
           <div className="relative h-48 overflow-hidden">
             <img 
@@ -27,7 +27,7 @@ const PlanetCard: React.FC<PlanetCardProps> = ({ year, index }) => {
               alt={year.planet}
               className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-indigo-900 to-transparent opacity-70"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-indigo-900 to-transparent opacity-10"></div>
             <div className="absolute bottom-4 left-4 text-white">
               <h3 className="text-xl font-bold"></h3>
             </div>

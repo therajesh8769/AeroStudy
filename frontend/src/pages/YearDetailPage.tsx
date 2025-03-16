@@ -109,8 +109,8 @@ const YearDetailPage: React.FC = () => {
                   whileTap={{ scale: 0.98 }}
                   className={`p-8 rounded-xl shadow-lg ${
                     index === 0 
-                      ? 'bg-gradient-to-br from-orange-900 to-red-900' 
-                      : 'bg-gradient-to-br from-blue-900 to-indigo-900'
+                      ? 'border-2 border-orange-500' 
+                      : 'border-2 border-sky-500'
                   }`}
                 >
                   <div className="flex items-center mb-4">

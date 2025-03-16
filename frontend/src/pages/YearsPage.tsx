@@ -104,7 +104,7 @@ const YearsPage: React.FC = () => {
                 <motion.div 
                   whileHover={{ scale: 1.05, rotate: 1 }}
                   whileTap={{ scale: 0.98 }}
-                  className="bg-gradient-to-br from-indigo-900 to-blue-900 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 h-full"
+                  className=" border-2 border-sky-500 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 h-full "
                 >
                   <div className="relative h-48 overflow-hidden">
                     <img 

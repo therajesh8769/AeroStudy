@@ -59,7 +59,7 @@ const SemesterPage: React.FC = () => {
                 <motion.div 
                   whileHover={{ scale: 1.03, y: -5 }}
                   whileTap={{ scale: 0.98 }}
-                  className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 h-full"
+                  className="border-2 border-sky-500  rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 h-full"
                 >
                   <div className="p-6">
                     <div className="flex items-start mb-4">
