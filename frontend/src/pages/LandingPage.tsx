@@ -19,50 +19,35 @@ interface TeamMember {
 
 const developers: TeamMember[] = [
   {
-    name: "Alex Chen",
+    name: "Rajesh Yadav",
     role: "Lead Developer",
     image:
-      "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-    github: "https://github.com/alexchen",
-    linkedin: "https://linkedin.com/in/alexchen",
-    email: "alex@example.com",
+      "",
+    github: "https://github.com/",
+    linkedin: "https://linkedin.com/in/",
+    email: "",
   },
-  {
-    name: "Sarah Johnson",
-    role: "Frontend Developer",
-    image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-    github: "https://github.com/sarahj",
-    linkedin: "https://linkedin.com/in/sarahj",
-    email: "sarah@example.com",
-  },
+  
 ]
 
 const contentTeam: TeamMember[] = [
   {
-    name: "Dr. Emily White",
-    role: "Content Lead",
+    name: "Manish Kumar",
+    role: "Content Team",
     image:
-      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-    linkedin: "https://linkedin.com/in/emilywhite",
-    email: "emily@example.com",
+      "",
+    linkedin: "https://linkedin.com/in/",
+    email: "",
   },
   {
-    name: "Prof. Michael Brown",
-    role: "Senior Content Editor",
+    name: "Prince Kumar",
+    role: "Content Team",
     image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-    linkedin: "https://linkedin.com/in/michaelbrown",
-    email: "michael@example.com",
+      "",
+    linkedin: "https://linkedin.com/in/",
+    email: "",
   },
-  {
-    name: "Dr. Lisa Anderson",
-    role: "Technical Writer",
-    image:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-    linkedin: "https://linkedin.com/in/lisaanderson",
-    email: "lisa@example.com",
-  },
+  
 ]
 
 interface TeamDialogProps {
