@@ -81,9 +81,9 @@ app.get('/api/files/:subject', async (req, res) => {
 
 
   app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../frontend/build", "index.html"));
+    // Updated path to match your structure
+    res.sendFile(path.join(__dirname, "../frontend/index.html"));
   });
-  
 // Start Server
 // app.listen(PORT, () => {
 //   console.log(`Server running on http://localhost:${PORT}`);
