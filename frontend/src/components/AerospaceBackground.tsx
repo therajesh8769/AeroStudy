@@ -135,20 +135,20 @@ function AerospaceScene() {
       <Grid />
 
       {/* Aircraft with trails */}
-      {/* <Aircraft position={[0, 0, 0]} speed={1} color="#ff4a4a" />
-      <Aircraft position={[2, 1, 0]} speed={0.7} color="#4aff4a" />
-      <Aircraft position={[-2, -1, 0]} speed={1.3} color="#4a4aff" /> */}
+      {/* <Aircraft position={[0, 0, 0]} speed={0.001} color="#ff4a4a" />
+      <Aircraft position={[2, 1, 0]} speed={0.001} color="#4aff4a" />
+      <Aircraft position={[-2, -1, 0]} speed={0.001} color="#4a4aff" /> */}
 
       {/* Satellites */}
-      {/* <Satellite radius={8} speed={0.5} color="#ffaa44" />
-      <Satellite radius={12} speed={0.3} color="#44aaff" />
-      <Satellite radius={15} speed={0.2} color="#aa44ff" /> */}
+       {/* <Satellite radius={8} speed={0.001} color="#ffaa44" />
+      <Satellite radius={12} speed={0.005} color="#44aaff" />
+      <Satellite radius={15} speed={0.009} color="#aa44ff" />  */}
 
       {/* Technical elements */}
       <BlueprintElements />
 
       {/* Floating data points */}
-      {[...Array(20)].map((_, i) => (
+      {[...Array(30)].map((_, i) => (
         <Float key={i} speed={2} rotationIntensity={0.2} floatIntensity={0.5}>
           <mesh
             position={[MathUtils.randFloatSpread(20), MathUtils.randFloatSpread(20), MathUtils.randFloatSpread(20)]}
