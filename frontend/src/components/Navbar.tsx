@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
       >
         <div className="flex justify-between h-12">
           <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-2 hover:text-blue-300 transition-colors duration-300">
+            <Link to="/" className="flex items-center space-x-2 hover:text-sky-300 transition-colors duration-300">
               <motion.div
                 whileHover={{ rotate: 360 }}
                 transition={{ duration: 0.5 }}
@@ -62,7 +62,7 @@ const Navbar: React.FC = () => {
               >
                 <Link
                   to={`/year/${year.id}`}
-                  className="px-3 py-2 rounded-lg text-sm font-medium hover:bg-indigo-800 transition-colors duration-300"
+                  className="px-3 py-2 rounded-lg text-sm font-medium hover:bg-sky-600 transition-colors duration-300"
                 >
                   {year.name}
                 </Link>
@@ -85,7 +85,7 @@ const Navbar: React.FC = () => {
             <motion.button
               whileTap={{ scale: 0.95 }}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="p-2 rounded-md hover:bg-indigo-800 transition-colors duration-300"
+              className="p-2 rounded-md hover:bg-sky-600 transition-colors duration-300"
             >
               {isMobileMenuOpen ? (
                 <X className="h-6 w-6" />
@@ -106,7 +106,7 @@ const Navbar: React.FC = () => {
             exit="closed"
             variants={mobileMenuVariants}
             transition={{ duration: 0.2 }}
-            className="md:hidden bg-indigo-900/95 backdrop-blur-sm"
+            className="md:hidden  backdrop-blur-sm"
           >
             <div className="px-2 pt-2 pb-3 space-y-1">
               {years.map((year) => (
