@@ -17,6 +17,7 @@ const Navbar: React.FC = () => {
     { id: 2, name: '2nd Year' },
     { id: 3, name: '3rd Year' },
     { id: 4, name: '4th Year' },
+    {id: 5, name: 'GATE' },
   ];
 
   const navbarVariants = {

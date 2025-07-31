@@ -75,12 +75,10 @@ AE3172: '1JyR2OYj7QrF10rheBBPpSlmmP1IJY29U',
 AE3171: '1kfDm1zFvshQDpqoJJCH6jWOSI0hxn5Ne',  
 AE3105: '11AxottnJD5EZbZoVHEjD19mVZVGSo28A',  
 AE3104: '1cEi46lkOpv7o94YhtKcy7zsu667Y5BBC',  
-AE3103: '1lpTVbFdg2fsOvMS9U2zsKiksoEsZe9aR',  
+AE3103: '1lpTVbFdg2fsOvMS9U2zsKiksoEsZe9aR',
 AE3102: '1gzKZY2AzNDSag9DglW_z3mfLJp3EMsNv',  
 AE3101: '1MK9GRZqjeDuSUPxwAKmgO26xoGV7ltCJ',  
 
-
- 
 AE4101: '1PTUGr3szNbDiVamko5g_2yOWICU-en9O',  
 AE4102: '1aa8NS263iHs1PcSrcbQCH6y1mIP3ewWR',  
 CE1: '1sDAnqH4HjjvLvpt516YU26E3Y_9clJ4x',  
@@ -94,7 +92,19 @@ AE4291: '1pVdlrfAoM6qe9u7qX0oWVGpa5EMDAeno',
 AE4292: '17Fd_x8iON3gnyQxKIu-VwP9bwdoywUV-',  
 AE4293: '1tR3wldcLDGv2I8y455hypiuxQxnTGprB',  
 CE2: '1HMhR6KhMHhuXhuYSE-rnJeQ81wGhaELq',  
-OE2: '10mMOdnM2rp79hFjPzDn4iELgKPdvcDdh',  
+OE2: '10mMOdnM2rp79hFjPzDn4iELgKPdvcDdh',
+
+AerospaceStructures:'1FVkVQGDkyPrYTgjB4o7l3PaSoZh0WIlF',
+Aerodynamics:'13RsTVUHS7gEaEXFjdlh-TW_8oGc0W0Gy',
+EngineeringMechanics: '1sXNQwWEGHf5J3k_bLeBFqEDaxlAMkcUj',
+FlightMechanics: '1akc6kgZZAOd0oyerXyXFl9ZesJH-LnRM',
+FluidMechanics: '1R7Mm_rt9fsZrJ_s2gU7Az2x_n6ziI1Ki',
+GasDynamics:'1UwmT1OVsEqNUrahhsnm7o5bLLE3K7C9I',
+GeneralAptitude: '1kz-5M2YJeOEK5zSgO-VR4S74GQPzwjBD',
+Mathematics: '1LUIdOQ-LITqewO_-6Kz5YKaq42k5bJ03',
+SpaceDynamics:'1ozMD06i0fBi5zLq6dQ4L4fkM3NFa9qQ_',
+Thermodynamics: '15oY62mFlg_TQshnzyESuC3AA05ZkUKAO', 
+Vibration:'1pTq6CTX0de6FU0fjqKzc2yAAskyHXnva',
 
 };
 

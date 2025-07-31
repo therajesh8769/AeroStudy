@@ -7,7 +7,7 @@ import { Calendar } from 'lucide-react';
 const YearDetailPage: React.FC = () => {
   const { yearId } = useParams<{ yearId: string }>();
   const year = yearsData.find(y => y.id.toString() === yearId);
-  
+  console.log(year?.planetImage);
   if (!year) {
     return (
       <div className="min-h-screen flex items-center justify-center">

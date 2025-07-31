@@ -8,7 +8,7 @@ export const yearsData: Year[] = [
     id: 1,
     name: "First Year",
     planet: "",
-    planetImage: "https://images.unsplash.com/photo-1614732414444-096e5f1122d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+    planetImage: "/1st.jpg",
     semesters: [
       {
         id: "1-odd",
@@ -47,7 +47,7 @@ export const yearsData: Year[] = [
     id: 2,
     name: "Second Year",
     planet: "",
-    planetImage: "https://images.unsplash.com/photo-1564053489984-317bbd824340?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+    planetImage: "/2nd.jpg",
     semesters: [
       {
         id: "2-odd",
@@ -84,7 +84,7 @@ export const yearsData: Year[] = [
     id: 3,
     name: "Third Year",
     planet: "",
-    planetImage: "https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+    planetImage: "/3rd.jpg",
     semesters: [
       {
         id: "3-odd",
@@ -120,7 +120,7 @@ export const yearsData: Year[] = [
     id: 4,
     name: "Fourth Year",
     planet: "",
-    planetImage: "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+    planetImage: "/4th.jpg",
     semesters: [
       {
         id: "4-odd",
@@ -148,6 +148,43 @@ export const yearsData: Year[] = [
           { id: "4-14", name: "Comprehensive Viva", code: "AE4293", materials: [] },
           
         ]
+      }
+    ]
+  },
+  {
+    id: 5,
+    name: "GATE",
+    planet: "",
+    planetImage: "/gate.jpg",
+    semesters: [
+      {
+        id: "Notes",
+        name: "Notes",
+        subjects: [
+          { id: "gate-notes1", name: "Aerodynamics", code: "aerodynamics_note", materials: [] },
+          { id: "gate-notes2", name: "Fluid Dynamics", code: "fluid_notes", materials: [] },
+          { id: "gate-notes3", name: "Gas Dynamics", code: "gas_dynamics_notes", materials: [] },
+          { id: "gate-notes4", name: "Aptitude", code: "general_aptitude_notes", materials: [] },
+          { id: "gate-notes5", name: "Jet Propulsion", code: "jet_propulsion_notes", materials: [] },
+          { id: "gate-notes6", name: "Mathematics", code: "mathematics_notes", materials: [] },
+          { id: "gate-notes7", name: "Rocket Propulsion", code: "rocket_propulsion_notes", materials: [] },
+          { id: "gate-notes8", name: "Strength of Materials", code: "strength_of_materials_notes", materials: [] },
+          { id: "gate-notes9", name: "Thermodynamic", code: " thermodynamics_notes", materials: [] }
+        
+        ]
+      },
+      {
+        id: "Assignments",
+        name: "Assignments",
+        subjects: [
+          { id: "gate-assign1", name: "Fluid Mechanics", code: 'FluidMechanics_Assignment', materials: [] },
+          { id: "gate-assign2", name: "Mathematics", code: 'Mathematics_Assignment', materials: [] },
+          { id: "gate-assign3", name: "General Aptitude", code: 'GeneralAptitude_Assignment', materials: [] },
+          { id: "gate-assign4", name: "Thermodynamics", code: 'Thermodynamics_Assignment', materials: [] },
+          { id: "gate-assign5", name: "Flight Mechanics", code: 'FlightMechanics_Assignment', materials: [] },
+          { id: "gate-assign6", name: "Aerospace Structures", code: 'AerospaceStructures_Assignment', materials: [] }
+        ]
+        
       }
     ]
   }
