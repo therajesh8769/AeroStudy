@@ -161,7 +161,7 @@ export const yearsData: Year[] = [
         id: "Notes",
         name: "Notes",
         subjects: [
-          { id: "gate-notes1", name: "Aerodynamics", code: "aerodynamics_note", materials: [] },
+          { id: "gate-notes1", name: "Aerodynamics", code: "aerodynamics_notes", materials: [] },
           { id: "gate-notes2", name: "Fluid Dynamics", code: "fluid_notes", materials: [] },
           { id: "gate-notes3", name: "Gas Dynamics", code: "gas_dynamics_notes", materials: [] },
           { id: "gate-notes4", name: "Aptitude", code: "general_aptitude_notes", materials: [] },
@@ -177,12 +177,17 @@ export const yearsData: Year[] = [
         id: "Assignments",
         name: "Assignments",
         subjects: [
-          { id: "gate-assign1", name: "Fluid Mechanics", code: 'FluidMechanics_Assignment', materials: [] },
-          { id: "gate-assign2", name: "Mathematics", code: 'Mathematics_Assignment', materials: [] },
-          { id: "gate-assign3", name: "General Aptitude", code: 'GeneralAptitude_Assignment', materials: [] },
-          { id: "gate-assign4", name: "Thermodynamics", code: 'Thermodynamics_Assignment', materials: [] },
-          { id: "gate-assign5", name: "Flight Mechanics", code: 'FlightMechanics_Assignment', materials: [] },
-          { id: "gate-assign6", name: "Aerospace Structures", code: 'AerospaceStructures_Assignment', materials: [] }
+          { id: "gate-assign1", name: "Fluid Mechanics", code: 'FM4', materials: [] },
+          { id: "gate-assign2", name: "Mathematics", code: 'Math8', materials: [] },
+          { id: "gate-assign3", name: "General Aptitude", code: 'GA7', materials: [] },
+          { id: "gate-assign4", name: "Thermodynamics", code: 'Thermo10', materials: [] },
+          { id: "gate-assign5", name: "Flight Mechanics", code: 'FLM5', materials: [] },
+         
+          { id: "gate-assign7", name: "Gas Dynamics", code: 'GD6', materials: [] },
+          { id: "gate-assign8", name: "Aerodynamics", code: 'AE2', materials: [] },
+          { id: "gate-assign9", name: "Space Dynamics", code: 'SD9', materials: [] },
+          { id: "gate-assign10", name: "Vibration", code: 'Vib11', materials: [] },
+          { id: "gate-assign11", name: "Engineering Mechanics", code: 'EM3', materials: [] }
         ]
         
       }
