@@ -161,15 +161,15 @@ export const yearsData: Year[] = [
         id: "Notes",
         name: "Notes",
         subjects: [
-          { id: "gate-notes1", name: "Aerodynamics", code: "aerodynamics_notes", materials: [] },
-          { id: "gate-notes2", name: "Fluid Dynamics", code: "fluid_notes", materials: [] },
-          { id: "gate-notes3", name: "Gas Dynamics", code: "gas_dynamics_notes", materials: [] },
-          { id: "gate-notes4", name: "Aptitude", code: "general_aptitude_notes", materials: [] },
-          { id: "gate-notes5", name: "Jet Propulsion", code: "jet_propulsion_notes", materials: [] },
-          { id: "gate-notes6", name: "Mathematics", code: "mathematics_notes", materials: [] },
-          { id: "gate-notes7", name: "Rocket Propulsion", code: "rocket_propulsion_notes", materials: [] },
-          { id: "gate-notes8", name: "Strength of Materials", code: "strength_of_materials_notes", materials: [] },
-          { id: "gate-notes9", name: "Thermodynamic", code: " thermodynamics_notes", materials: [] }
+          { id: "gate-notes1", name: "Aerodynamics", code: "AEN1", materials: [] },
+          { id: "gate-notes2", name: "Fluid Dynamics", code: "FMN2", materials: [] },
+          { id: "gate-notes3", name: "Gas Dynamics", code: "GDN3", materials: [] },
+          { id: "gate-notes4", name: "Aptitude", code: "GAN4", materials: [] },
+          { id: "gate-notes5", name: "Jet Propulsion", code: "JPN5", materials: [] },
+          { id: "gate-notes6", name: "Mathematics", code: "MAN6", materials: [] },
+          { id: "gate-notes7", name: "Rocket Propulsion", code: "RPN7", materials: [] },
+          { id: "gate-notes8", name: "Strength of Materials", code: "SOMN8", materials: [] },
+          { id: "gate-notes9", name: "Thermodynamic", code: " thermo9", materials: [] }
         
         ]
       },
