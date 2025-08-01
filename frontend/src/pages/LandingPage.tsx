@@ -237,7 +237,7 @@ const LandingPage: React.FC = () => {
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">Aerospace Engineering</h1>
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">IIEST SHIBPUR</h2>
-          <h3 className="text-2xl md:text-3xl font-light text-blue-200 mb-8">Study Materials Portal</h3>
+          <h3 className=" italic text-2xl md:text-3xl font-light text-blue-200 mb-8 ">Where aerospace brains take off.</h3>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Access comprehensive study materials for all four years of Aerospace Engineering curriculum. Everything you
             need for your academic journey, organized by year and semester.
@@ -268,7 +268,7 @@ const LandingPage: React.FC = () => {
               className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg shadow-lg flex items-center justify-center text-lg font-medium hover:from-blue-600 hover:to-purple-700 transition-colors duration-300"
             >
               <Rocket className="mr-2 h-5 w-5" />
-              Study Now
+              Access Materials
             </motion.button>
           </Link>
         </motion.div>
@@ -302,7 +302,7 @@ const LandingPage: React.FC = () => {
         />
       </motion.div>
 
-      <footer className="w-full pb-16 pt-2 px-6 flex flex-col sm:flex-row justify-between items-center gap-4 relative z-10  bg-opacity-30">
+      <footer className="w-full pb-10 pt-2 px-6 flex flex-col sm:flex-row justify-between items-center gap-4 relative z-10  bg-opacity-30">
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
