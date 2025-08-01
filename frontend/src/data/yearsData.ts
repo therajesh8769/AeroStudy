@@ -55,9 +55,9 @@ export const yearsData: Year[] = [
         subjects: [
           { id: "2-1", name: "Engineering Mathematics III", code: "MA2101", materials: [] },
           { id: "2-2", name: "Fluid Dynamics", code: "AE2101", materials: [] },
-          { id: "2-3", name: "Strength of Materials", code: "AE2102", materials: [] },
-          { id: "2-4", name: "Dynamics", code: "AE2103", materials: [] },
-          { id: "2-5", name: "Basic Flight Mechanics", code: "AE2104", materials: [] },
+          { id: "2-3", name: "Strength of Materials", code: "AM2101", materials: [] },
+          { id: "2-4", name: "Dynamics", code: "AM2102", materials: [] },
+          { id: "2-5", name: "Basic Flight Mechanics", code: "AE2102", materials: [] },
           { id: "2-6", name: "Fluid Dynamics Laboratory", code: "AE2171", materials: [] },
           { id: "2-7", name: "Strength of Materials Laboratory", code: "AM2171", materials: [] },
           { id: "2-8", name: "Machine Drawing", code: "AM2172", materials: [] },

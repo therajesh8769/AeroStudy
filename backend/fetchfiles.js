@@ -26,6 +26,7 @@ const drive = google.drive({ version: 'v3', auth });
 
 // Map subjects to their corresponding Google Drive Folder IDs
 const SUBJECT_FOLDERS = {
+  //1st year
 AM1116: '1S1k3Zt9qAg8TJryAPBFrxx5sKxiLukM5',
 CE1112: '1K9L29GvxefVqBjk_jW3BJkbJv4dht-F1',
 EE1111: 'LahteNQIpLUqCxmnWkZ471wG7X6AGhaS',
@@ -42,7 +43,7 @@ CS1103: '1R8CAMW_UVLLpsoxYq3P5TD63XNNB4lD0',
 CS1107: '1709Zt2givzXZ25gvbT6osaBY0zZA0acj',
 HM1105: '1hYnvCMBc9wzlTGjgJEggpj_RAzQU04-E',
 MA1101: '1AYVxgMTs_fZyZu7INS6vCQby0f2yoPjV',
-
+//2nd year
 MA2101: '1G0PJvFcbTLCqDqSnPE0aPzuo9uCLaIj6',  
 AE2101: '1ClmKhWgxh_8gogOJbhvFRkEwOzC7Pr-5',  
 AM2101: '1_wBFEiDt2RJolsIG3Q_uO88iYxFLVZF4',  
@@ -61,7 +62,7 @@ AE2271: '1CjdSKABeJDdL13Elc-Y433Syk-wNWHgi',
 AE2272: '19zGfl3AvNz5MvwXhM3-YTi6qwiLcKivY',  
 AE2273: '1-VNRuLrhGXoZ4PURdme8RAWDYC8hpJ0U',  
 AE2274: '1gYYr038vZEdHV9mWAp7lAdm-iMc8zEWN',  
-
+//3rd year
 AE3273: '1XUrNKzXAOjEaF5TJUxjujAzhJCO7Juiy',  
 AE3272: '1oTY7P8kvG1cqBY1234YdwAnye4XhRHvP',  
 AE3271: '1D9G_141h-3R7rqNHhkG9DzRnvqz6D_xd',  
@@ -78,7 +79,7 @@ AE3104: '1cEi46lkOpv7o94YhtKcy7zsu667Y5BBC',
 AE3103: '1lpTVbFdg2fsOvMS9U2zsKiksoEsZe9aR',
 AE3102: '1gzKZY2AzNDSag9DglW_z3mfLJp3EMsNv',  
 AE3101: '1MK9GRZqjeDuSUPxwAKmgO26xoGV7ltCJ',  
-
+//4th year
 AE4101: '1PTUGr3szNbDiVamko5g_2yOWICU-en9O',  
 AE4102: '1aa8NS263iHs1PcSrcbQCH6y1mIP3ewWR',  
 CE1: '1sDAnqH4HjjvLvpt516YU26E3Y_9clJ4x',  
@@ -125,7 +126,7 @@ async function listFiles(subject) {
       const folderId = SUBJECT_FOLDERS[subject];
       if (!folderId) throw new Error(`Invalid subject code: ${subject}`);
   
-      console.log(`Using folder ID: ${folderId}`); // Log folder ID
+     
   
       const res = await drive.files.list({
         q: `'${folderId}' in parents and trashed=false`,
@@ -135,8 +136,8 @@ async function listFiles(subject) {
       console.log(`Files found: ${res.data.files.length}`); // Log files count
       return res.data.files;
     } catch (error) {
-      console.error('❌ Error fetching files:', error);
-      console.error('⚠️ Full Error:', JSON.stringify(error, null, 2)); // Log full error object
+      console.error('Error fetching files:', error);
+      console.error(' Full Error:', JSON.stringify(error, null, 2)); // Log full error object
       throw error;
     }
   }
